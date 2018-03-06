@@ -4,8 +4,10 @@
   "description": "HTTP Server on Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,13 +22,16 @@
   "homepage": "https://github.com/cbdyzj/httpn#readme",
   "devDependencies": {
     "@types/koa": "latest",
+    "@types/koa-router": "latest",
     "@types/node": "latest",
     "@types/sequelize": "latest",
     "ts-node": "latest",
     "typescript": "latest"
   },
   "dependencies": {
+    "amqplib": "latest",
     "koa": "latest",
+    "koa-router": "latest",
     "moment": "latest",
     "mysql2": "latest",
     "sequelize": "latest"

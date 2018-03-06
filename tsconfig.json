@@ -3,7 +3,6 @@
         "module": "commonjs",
         "target": "es2017",
         "outDir": "dist",
-        "declaration": true,
         "allowJs": true,
         "lib": [
             "es2017"
