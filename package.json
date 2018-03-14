@@ -22,6 +22,7 @@
   "homepage": "https://github.com/cbdyzj/httpn#readme",
   "devDependencies": {
     "@types/koa": "latest",
+    "@types/koa-bodyparser": "latest",
     "@types/koa-router": "latest",
     "@types/node": "latest",
     "@types/sequelize": "latest",
@@ -31,7 +32,10 @@
   "dependencies": {
     "amqplib": "latest",
     "koa": "latest",
+    "koa-bodyparser": "latest",
     "koa-router": "latest",
+    "koa-session": "latest",
+    "koa-static": "latest",
     "moment": "latest",
     "mysql2": "latest",
     "sequelize": "latest"

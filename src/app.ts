@@ -1,10 +1,19 @@
+import { join } from 'path'
 import * as Koa from 'koa'
+import * as serve from 'koa-static'
+import * as bodyParser from 'koa-bodyparser'
+import * as session from 'koa-session'
 
 import router from './router'
 
 const app = new Koa
+app.keys = ['koa']
+
+app.use(serve(join(__dirname, '..', 'public')))
+
+app.use(bodyParser())
+app.use(session(app))
 
 app.use(router.routes())
 
-// 导出服务
 export default app
