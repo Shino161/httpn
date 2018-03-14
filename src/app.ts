@@ -4,7 +4,7 @@ import * as serve from 'koa-static'
 import * as bodyParser from 'koa-bodyparser'
 import * as session from 'koa-session'
 
-import router from './router'
+import { router } from './router'
 
 const app = new Koa
 app.keys = ['koa']

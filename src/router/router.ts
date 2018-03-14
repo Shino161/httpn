@@ -1,6 +1,6 @@
 import * as Router from 'koa-router'
 
-const router = new Router
+export const router = new Router
 
 router.get('/api/ping', ctx => ctx.body = 'pong')
 
@@ -16,5 +16,3 @@ function login({ username, password }, session) {
         return { message: '登录成功' }
     }
 }
-
-export default router
