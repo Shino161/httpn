@@ -10,7 +10,7 @@ const option = {
     host: 'localhost',
     dialect: 'mysql',
     directory: __dirname,
-    tables: ['村庄']
+    tables: ['foo']
 }
 
 const auto = new SequelizeAuto(option.database, option.username, option.password, option)
