@@ -26,6 +26,8 @@
     "@types/koa-router": "latest",
     "@types/node": "latest",
     "@types/sequelize": "latest",
+    "mysql": "latest",
+    "sequelize-auto": "latest",
     "ts-node": "latest",
     "typescript": "latest"
   },
