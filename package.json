@@ -24,6 +24,8 @@
     "@types/koa": "latest",
     "@types/koa-bodyparser": "latest",
     "@types/koa-router": "latest",
+    "@types/koa-session": "latest",
+    "@types/koa-static": "latest",
     "@types/node": "latest",
     "@types/sequelize": "latest",
     "mysql": "latest",

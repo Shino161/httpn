@@ -1,6 +1,6 @@
 import * as http from 'http'
 import app from './app'
-import { log } from './logger'
+import { log } from './util'
 
 const port = 3000
 
