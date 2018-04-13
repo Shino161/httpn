@@ -23,7 +23,7 @@ router.post('/login', async  ctx => {
 // Logout user
 router.post('/logout', ctx => {
     ctx.session.user = null
-    return { message: '登出成功！' }
+    return ctx.body = { message: '登出成功！' }
 })
 
 // Register user
