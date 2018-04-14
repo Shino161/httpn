@@ -23,11 +23,10 @@ export const userService = {
     },
     async list({ page, size, username }) {
         const limit = size || 10
-        console.log(page)
         const offset = page ? (page - 1) * size : 0
-        const where = {}
+        const where: any = {}
         if (username) {
-            where['name'] = { [Op.like]: `%${username.trim()}%` }
+            where.name = { [Op.like]: `%${username.trim()}%` }
         }
         return await User.findAll({
             where,
