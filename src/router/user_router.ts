@@ -39,7 +39,9 @@ router.post('/register', async ctx => {
 
 // Query user list, Search by username
 router.get('/list', async ctx => {
-    const { page, size, username } = ctx.query
+    const { username } = ctx.query
+    const page = ctx.query.page | 0
+    const size = ctx.query.size | 0
     return ctx.body = await userService.list({ page, size, username })
 
 })

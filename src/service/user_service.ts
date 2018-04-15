@@ -23,7 +23,7 @@ export const userService = {
     },
     async list({ page, size, username }) {
         const limit = size || 10
-        const offset = page ? (page - 1) * size : 0
+        const offset = page ? (page - 1) * limit : 0
         const where: any = {}
         if (username) {
             where.name = { [Op.like]: `%${username.trim()}%` }
