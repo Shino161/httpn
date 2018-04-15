@@ -11,3 +11,5 @@ export const testDatabase: Options = {
     isolationLevel: 'READ COMMITTED',
     operatorsAliases: false,
 }
+
+export const port = 3000

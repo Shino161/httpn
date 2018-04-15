@@ -1,10 +1,11 @@
 import * as Sequelize from 'sequelize'
 import { Options } from 'sequelize'
-import models from './models/index'
+import models from './models'
 
-import { configuration } from '../configuration/index'
+import { configuration } from '../configuration'
 
-// 定义模型
-export const sequelize = new Sequelize(configuration.testDatabase)
+const { testDatabase } = configuration
+
+export const sequelize = new Sequelize(testDatabase)
 models.forEach(model => model.define(sequelize, Sequelize))
 models.forEach(model => model.associate(sequelize.models))
