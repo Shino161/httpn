@@ -32,7 +32,7 @@ export function define(sequelize, DataTypes) {
 		}
 	}, {
 			tableName: 'user'
-		});
-};
+		})
+}
 
 export function associate(models) { }
