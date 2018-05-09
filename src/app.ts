@@ -9,7 +9,7 @@ import { router } from './router'
 const app = new Koa
 app.keys = ['koa']
 
-app.use(serve(join(__dirname, '..', 'public')))
+app.use(serve(join(__dirname, '..', 'static')))
 
 app.use(bodyParser())
 app.use(session(app))
