@@ -11,7 +11,7 @@ router.get('/me', ctx => {
 
 // Login user
 router.post('/login', async  ctx => {
-    const { username, password } = ctx.request.body
+    const { username, password } = ctx.request.body as any
     const user = await userService.authenticate(username, password)
     if (user) {
         ctx.session.user = user
@@ -28,7 +28,7 @@ router.post('/logout', ctx => {
 
 // Register user
 router.post('/register', async ctx => {
-    const user = ctx.request.body
+    const user: any = ctx.request.body
     try {
         await userService.register(user)
     } catch (error) {
