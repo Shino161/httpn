@@ -1,9 +1,8 @@
 import { join } from 'path'
-// import * as Koa from 'koa'
 import Koa from 'koa'
-import * as serve from 'koa-static'
-import * as bodyParser from 'koa-bodyparser'
-import * as session from 'koa-session'
+import serve from 'koa-static'
+import bodyParser from 'koa-bodyparser'
+import session from 'koa-session'
 
 import { router } from './router'
 
